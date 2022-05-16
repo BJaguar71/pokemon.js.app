@@ -11,3 +11,9 @@ let pokemonList = [
       type: ['Bug', 'Poison'],
       gender: [50% + ' M ', 50% + ' F']  
     },
+    {
+      name: 'Zubat',
+      height: 0.8 + ' m',
+      type: ['Poison', 'Flying'],
+      gender: [50% + ' M ', 50% + ' F'] 
+    },
