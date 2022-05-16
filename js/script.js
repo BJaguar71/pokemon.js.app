@@ -17,3 +17,9 @@ let pokemonList = [
       type: ['Poison', 'Flying'],
       gender: [50% + ' M ', 50% + ' F'] 
     },
+    {
+        name: 'Onix',
+        height: 8.8 + ' m',
+        type: ['Rock', 'Ground'],
+        gender: [50% + ' M ', 50% + ' F']
+    },
