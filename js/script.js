@@ -23,3 +23,10 @@ let pokemonList = [
         type: ['Rock', 'Ground'],
         gender: [50% + ' M ', 50% + ' F']
     },
+    {
+        name: 'Kangaskhan',
+        height: 2.2 + ' m',
+        type: 'Normal',
+        gender: [0% + ' M', 100% + ' F']
+    }
+];
