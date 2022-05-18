@@ -2,7 +2,7 @@ let pokemonList = [
     {
         name: 'Arbok',
         height: 3.5,
-        typs: 'Poison',
+        typs: ['Poison'],
         gender: ['50% M', '50% F'] 
     },
     {
