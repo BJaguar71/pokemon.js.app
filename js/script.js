@@ -26,7 +26,7 @@ let pokemonList = [
     {
         name: 'Kangaskhan',
         height: 2.2,
-        typs: 'Normal',
+        typs: ['Normal'],
         gender: ['0% M', '100% F']
     }
 ];
