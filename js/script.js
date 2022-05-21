@@ -1,3 +1,4 @@
+// an array of objects ere defined
 let pokemonList = [
     {
         name: 'Arbok',
