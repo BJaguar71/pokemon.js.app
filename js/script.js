@@ -31,3 +31,6 @@ let pokemonList = [
         gender: ['0% M', '100% F']
     }
 ];
+// the loop here will print the pokemon names + their heights
+for (let i = 0; i < pokemonList.length; i++){
+  document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height} m) `);
