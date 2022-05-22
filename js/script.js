@@ -36,8 +36,8 @@ for (let i = 0; i < pokemonList.length; i++){
   document.write('<ul>' + '<li>'+ pokemonList[i].name + '</li>' + '<li>' + pokemonList[i].height + ' m' + '</li>' + '</ul>');
   // a condition was defined here to highlight the big pokemon, averrage and tiny pokemons
   if (pokemonList[i].height > 5.0){
-    document.write(' - Wow, that\'s big!' + '<br>');
+    document.write('Wow, that\'s big!');
   } else if (pokemonList[i].height <= 5 && pokemonList[i].height <= 1){
-    document.write(' - It is averrage.' + '<br>');
-  } else {document.write(' - Tiny!' + '<br>');}
+    document.write('It is averrage.');
+  } else {document.write('Tiny!')}
 }
