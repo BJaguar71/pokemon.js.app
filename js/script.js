@@ -33,7 +33,7 @@ let pokemonList = [
 ];
 // the loop here will print the pokemon names + their heights
 for (let i = 0; i < pokemonList.length; i++){
-  document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height} m) `);
+  document.write('<ul>' + '<li>'+ pokemonList[i].name + '</li>' + '<li>' + pokemonList[i].height + ' m' + '</li>' + '</ul>');
   // a condition was defined here to highlight the big pokemon, averrage and tiny pokemons
   if (pokemonList[i].height > 5.0){
     document.write(' - Wow, that\'s big!' + '<br>');
