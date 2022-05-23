@@ -35,6 +35,7 @@ let pokemonList = [
 // display pokemons in an ul order
 document.write('<ul class="pokemon-list">');
 
+// for loop: prints pokemon name + size
 for (let i = 0; i < pokemonList.length; i++){
   document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height} m) `);
   // a condition was defined here to highlight the big pokemon, averrage and tiny pokemons
