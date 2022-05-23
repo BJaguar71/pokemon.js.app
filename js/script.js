@@ -37,11 +37,18 @@ document.write('<ul class="pokemon-list">');
 
 // for loop: prints pokemon name + size
 for (let i = 0; i < pokemonList.length; i++){
-  document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height} m) `);
-  // a condition was defined here to highlight the big pokemon, averrage and tiny pokemons
-  if (pokemonList[i].height > 5.0){
-    document.write(' - Wow, that\'s big!' + '<br>');
-  } else if (pokemonList[i].height <= 5 && pokemonList[i].height <= 1){
-    document.write(' - It is averrage.' + '<br>');
-  } else {document.write(' - Tiny!' + '<br>');}
+
+// openin li tag
+document.write(`<li class="pokemon-list__item"> ${pokemonList[i].name} (height <span>${pokemonList[i].height})`);
+if (pokemonList[i].height > 5.0){
+  document.write(' - Wow! it\'s big.');
+} else if (pokemonList[i].height <= 5 && pokemonList[i].height <= 1) {
+  document.write(' - It\'s average.');
+} else {document.write(' - It\'s tiny.');}
+
+// closing li tag
+document.write('</li>');
 }
+
+//closing ul tag 
+document.write('</ul>');
