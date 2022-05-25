@@ -31,7 +31,18 @@ let pokemonRepository = (function (){
         types: ['Normal'],
         gender: ['0% M', '100% F']
     }
-];
+]
+  function add(pokemon){
+    return pokemonList.puch(pokemon);
+  }
+  function getAll(){
+    return pokemonList;
+  }
+  
+  return {
+    add: add,
+    getAll: getAll
+  }
 })()
 
 // display pokemons in an ul order
