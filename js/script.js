@@ -32,9 +32,11 @@ let pokemonRepository = (function (){
         gender: ['0% M', '100% F']
     }
 ]
+// function to add new pokemons
   function add(pokemon){
     return pokemonList.push(pokemon);
   }
+// returns pokemonlist array
   function getAll(){
     return pokemonList;
   }
@@ -43,7 +45,7 @@ let pokemonRepository = (function (){
     add: add,
     getAll: getAll
   }
-})()
+})();
 
 // display pokemons in an ul order
 document.write('<ul class="pokemon-list">');
