@@ -49,7 +49,7 @@ let pokemonRepository = (function (){
 document.write('<ul class="pokemon-list">');
 
 // loop function declared: forEach()
-pokemonList.forEach(function (pokemon){
+pokemonRepository.getAll().forEach(function (pokemon){
 document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + 'm)</li>');
 // closing li tag
 document.write('</li>');
