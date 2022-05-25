@@ -35,20 +35,11 @@ let pokemonList = [
 // display pokemons in an ul order
 document.write('<ul class="pokemon-list">');
 
-// for loop: prints pokemon name + size
-for (let i = 0; i < pokemonList.length; i++){
-
-// openin li tag
-document.write(`<li class="pokemon-list__item"> ${pokemonList[i].name} (height <span>${pokemonList[i].height})`);
-if (pokemonList[i].height > 5.0){
-  document.write(' - Wow! it\'s big.');
-} else if (pokemonList[i].height <= 5 && pokemonList[i].height <= 1) {
-  document.write(' - It\'s average.');
-} else {document.write(' - It\'s tiny.');}
-
+// loop function declared: forEach()
+pokemonList.forEach(function (pokemon){
+document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + 'm)</li>');
 // closing li tag
 document.write('</li>');
-}
-
+})
 //closing ul tag 
 document.write('</ul>');
