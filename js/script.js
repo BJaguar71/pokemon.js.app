@@ -1,5 +1,6 @@
-// an array of objects ere defined
-let pokemonList = [
+// a new variable defined for IIFE
+let pokemonRepository = (function (){
+  let pokemonList = [
     {
         name: 'Arbok',
         height: 3.5,
@@ -31,6 +32,7 @@ let pokemonList = [
         gender: ['0% M', '100% F']
     }
 ];
+})()
 
 // display pokemons in an ul order
 document.write('<ul class="pokemon-list">');
