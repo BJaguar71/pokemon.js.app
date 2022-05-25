@@ -33,7 +33,7 @@ let pokemonRepository = (function (){
     }
 ]
   function add(pokemon){
-    return pokemonList.puch(pokemon);
+    return pokemonList.push(pokemon);
   }
   function getAll(){
     return pokemonList;
