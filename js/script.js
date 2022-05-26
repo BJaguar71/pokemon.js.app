@@ -47,6 +47,9 @@ let pokemonRepository = (function (){
   }
 })();
 
+// added new Pokemon
+pokemonRepository.add({name: 'Blaziken', height: 1.9, types: ['fire', 'fighting']});
+
 // display pokemons in an ul order
 document.write('<ul class="pokemon-list">');
 
@@ -54,8 +57,6 @@ document.write('<ul class="pokemon-list">');
 pokemonRepository.getAll().forEach(function (pokemon){
 document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + 'm)</li>');
 
-// added new Pokemon
-pokemonRepository.add({name: 'Blaziken', height: 1.9, types: ['fire', 'fighting']});
 // closing li tag
 document.write('</li>');
 })();
