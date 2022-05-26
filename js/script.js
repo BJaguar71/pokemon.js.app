@@ -59,6 +59,6 @@ document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + 'm)</li>'
 
 // closing li tag
 document.write('</li>');
-})();
+})
 //closing ul tag 
 document.write('</ul>');
