@@ -53,6 +53,8 @@ let pokemonRepository = (function (){
   // a class added to the button
     button.classList.add('pokemon-button');
   
+  // appending button 
+    listPokemon.appendChild(button);
   return {
     add: add,
     getAll: getAll
