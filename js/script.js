@@ -68,15 +68,5 @@ let pokemonRepository = (function (){
 // added new Pokemon
 pokemonRepository.add({name: 'Blaziken', height: 1.9, types: ['fire', 'fighting']});
 
-// display pokemons in an ul order
-document.write('<ul class="pokemon-list">');
-
 // loop function declared: forEach()
 pokemonRepository.getAll().forEach(function (pokemon){
-document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + 'm)</li>');
-
-// closing li tag
-document.write('</li>');
-})
-//closing ul tag 
-document.write('</ul>');
