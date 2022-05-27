@@ -48,6 +48,8 @@ let pokemonRepository = (function (){
     let listPokemon = document.createElement('li');
   // a button was added to each list parent
     let button = document.createElement('button');
+  // button inner text were defined : pokemon's name
+    button.innerText = pokemon.name;
   
   return {
     add: add,
