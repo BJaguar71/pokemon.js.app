@@ -50,6 +50,8 @@ let pokemonRepository = (function (){
     let button = document.createElement('button');
   // button inner text were defined : pokemon's name
     button.innerText = pokemon.name;
+  // a class added to the button
+    button.classList.add('pokemon-button');
   
   return {
     add: add,
