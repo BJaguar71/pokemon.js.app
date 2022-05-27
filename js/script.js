@@ -40,6 +40,12 @@ let pokemonRepository = (function (){
   function getAll(){
     return pokemonList;
   }
+// new finction was declared to add list item
+  function addListItem(pokemon){
+    // pokemon-list class was selected
+    let pokemonList = document.querySelector('.pokemon-list');
+  // list element was added to the ul parent
+    let listPokemon = document.createElement('li');
   
   return {
     add: add,
