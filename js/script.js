@@ -70,3 +70,5 @@ pokemonRepository.add({name: 'Blaziken', height: 1.9, types: ['fire', 'fighting'
 
 // loop function declared: forEach()
 pokemonRepository.getAll().forEach(function (pokemon){
+  pokemonRepository.addListItem(pokemon.name);
+});
