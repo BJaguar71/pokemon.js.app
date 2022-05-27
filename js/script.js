@@ -46,6 +46,8 @@ let pokemonRepository = (function (){
     let pokemonList = document.querySelector('.pokemon-list');
   // list element was added to the ul parent
     let listPokemon = document.createElement('li');
+  // a button was added to each list parent
+    let button = document.createElement('button');
   
   return {
     add: add,
