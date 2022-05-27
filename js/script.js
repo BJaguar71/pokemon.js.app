@@ -55,6 +55,9 @@ let pokemonRepository = (function (){
   
   // appending button 
     listPokemon.appendChild(button);
+  //appending list element
+    pokemonList.appendChild(listPokemon);
+  }
   return {
     add: add,
     getAll: getAll
