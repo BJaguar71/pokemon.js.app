@@ -19,3 +19,17 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+
+.pokemon-button {
+    background-color: #E6E2DD;
+    border: none;
+    border-bottom: 2px solid #0000004D;;
+    border-radius: 3px;
+    color: black;
+    display: inline-block;
+    font-family: inherit;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    transition: opacity 0.5s; 
+}
