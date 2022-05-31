@@ -58,6 +58,11 @@ function addListItem(pokemon){
   //appending list element
   pokemonList.appendChild(listPokemon);
 
+  //adding event listener to show the infos on click
+  button.addEventListener('click', function(event){
+    showDetails(pokemon);
+    });
+  }
   }
   return {
     add: add,
