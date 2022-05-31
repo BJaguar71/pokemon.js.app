@@ -63,11 +63,15 @@ function addListItem(pokemon){
     showDetails(pokemon);
     });
   }
+  //defined a function to show pokemons details
+  function showDetails(pokemon){
+    console.log(pokemon);
   }
   return {
     add: add,
     getAll: getAll,
-    addListItem: addListItem
+    addListItem: addListItem,
+    showDetails: showDetails
   };
 })();
 
