@@ -1,6 +1,6 @@
 // a new variable defined for IIFE
 let pokemonRepository = (function (){
-  let pokemonList = [
+  let pokemons = [
     {
         name: 'Arbok',
         height: 3.5,
@@ -38,7 +38,7 @@ function add(pokemon){
   }
 // returns pokemonlist array
 function getAll(){
-  return pokemonList;
+  return pokemons;
   }
 // new finction was declared to add list item
 function addListItem(pokemon){
