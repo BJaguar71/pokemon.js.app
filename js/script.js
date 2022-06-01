@@ -76,7 +76,11 @@ function addListItem(pokemon){
 })();
 
 // added new Pokemon
-pokemonRepository.add({name: 'Blaziken', height: 1.9, types: ['fire', 'fighting']});
+pokemonRepository.add({
+  name: 'Blaziken',
+  height: 1.9,
+  types: ['fire', 'fighting']
+});
 
 // loop function declared: forEach()
 pokemonRepository.getAll().forEach(function (pokemon){
