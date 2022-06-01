@@ -59,7 +59,7 @@ function addListItem(pokemon){
   pokemonList.appendChild(listPokemon);
 
   //adding event listener to show the infos on click
-  button.addEventListener('click', function(event){
+  button.addEventListener('click', function(){
     showDetails(pokemon);
     });
   }
