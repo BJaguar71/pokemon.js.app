@@ -50,6 +50,16 @@ let pokemonRepository = (function (){
         console.error(e);
     })
   }
+  function loadDetails (item){
+    let url = item.detailsUrl;
+    return fetch(url).then(function(response){
+      return response.json();
+    }).then(function(details){
+      item.imageUrl = details.sprites.front_shiny;
+      item.height = details.height;
+      item.types = details.types;
+    }).catch(function(e){
+      console.error(e);
     });
   }
   //defined a function to show pokemons details
