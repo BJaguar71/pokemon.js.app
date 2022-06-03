@@ -29,6 +29,12 @@ let pokemonRepository = (function (){
     //appending list element
     pokemonList.appendChild(listPokemon);
 
+    //adding event listener to show the infos on click
+    button.addEventListener('click', function(event){
+      showDetails(pokemon);
+      console.log(pokemon);
+      });
+    }
   // functoion to load list from the API
   function loadList(){
     return fetch(apiUrl).then(function (response){
