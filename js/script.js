@@ -81,9 +81,10 @@ let pokemonRepository = (function (){
     showDetails: showDetails
   };
 })();
-});
-
-// loop function declared: forEach()
-pokemonRepository.getAll().forEach(function (pokemon){
-  pokemonRepository.addListItem(pokemon);
+//load list
+pokemonRepository.loadList().then(function(){
+  // loop function declared: forEach()
+  pokemonRepository.getAll().forEach(function (pokemon){
+    pokemonRepository.addListItem(pokemon);
+  });
 });
