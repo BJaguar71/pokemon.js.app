@@ -2,7 +2,7 @@
 let pokemonRepository = (function (){
   let pokemonList = [];
   // link to external database
-  let apiUrl = 'https//pokeapi.co/api/v2/pokemon';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
   // function to add new pokemons
   function add(pokemon){
     return pokemonList.push(pokemon);
