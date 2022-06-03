@@ -29,6 +29,27 @@ let pokemonRepository = (function (){
     //appending list element
     pokemonList.appendChild(listPokemon);
 
+  // functoion to load list from the API
+  function loadList(){
+    return fetch(apiUrl).then(function (response){
+      // returns the json data
+      return response.json();
+    }).then(function (json){
+      // forEach loop to return each pokemons info
+      json.results.forEach(function(item){
+        let pokemon = {
+          name: item.name,
+          detailsUrl: item.url
+        };
+        // add pokemons 
+        add(pokemon);
+        console.log(pokemon);
+      });
+      // catch the errors
+      }).catch(function(e){
+        console.error(e);
+    })
+  }
     });
   }
   //defined a function to show pokemons details
