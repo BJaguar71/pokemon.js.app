@@ -3,12 +3,10 @@ let pokemonRepository = (function (){
   let pokemonList = [];
   // link to external database
   let apiUrl = 'https//pokeapi.co/api/v2/pokemon';
+  // function to add new pokemons
+  function add(pokemon){
+    return pokemonList.push(pokemon);
     }
-]
-// function to add new pokemons
-function add(pokemon){
-  return pokemonList.push(pokemon);
-  }
 // returns pokemonlist array
 function getAll(){
   return pokemonList;
