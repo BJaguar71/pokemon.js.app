@@ -63,8 +63,10 @@ let pokemonRepository = (function (){
     });
   }
   //defined a function to show pokemons details
-  function showDetails(pokemon){
-    console.log(pokemon);
+  function showDetails(item){
+    pokemonRepository.loadDetails(item).then(function (){
+      console.log(item);
+    });
   }
   return {
     add: add,
