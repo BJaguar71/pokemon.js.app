@@ -99,4 +99,10 @@ li {
     }
 }
 
+@media all and (min-width: 500px) and (max-width: 750px) {
+    h1, .title {
+        font-size: 15px;
+    }
+}
+
 }
