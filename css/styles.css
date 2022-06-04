@@ -127,6 +127,13 @@ li {
     h1, .title {
         font-size: 15px;
     }
+    .logo {
+        width: 80px;
+        margin: 0 auto;
+    }
+    .pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media all and (max-width: 750px) {
