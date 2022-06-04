@@ -32,4 +32,12 @@ body {
     padding: 10px;
     text-decoration: none;
     transition: opacity 0.5s; 
+.page-footer {
+    align-items: center;
+    background-color: #929984;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+    width:100%;
+}
 }
