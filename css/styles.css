@@ -53,17 +53,20 @@ body {
 }
 
 .pokemon-button {
-    background-color: #E6E2DD;
+    background-color: #f2f2f2;
     border: none;
-    border-bottom: 2px solid #0000004D;;
+    border-bottom: 1px solid #0075BE;
     border-radius: 3px;
-    color: black;
-    display: inline-block;
-    font-family: inherit;
-    margin: auto;
+    color: #0C3348;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-family: 'Chakra Petch';
+    margin: 10px auto;
     padding: 10px;
-    text-decoration: none;
-    transition: opacity 0.5s; 
+    transition: opacity 0.3s; 
+}
+
 .page-footer {
     align-items: center;
     background-color: #929984;
