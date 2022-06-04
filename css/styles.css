@@ -89,4 +89,14 @@ li {
     position: relative;
     width:100%;
 }
+
+@media all and (max-width: 500px) {
+    h1, .title {
+        font-size: 10px;
+    }
+    .logo {
+        width: 70px;
+    }
+}
+
 }
