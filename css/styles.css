@@ -17,11 +17,14 @@ box-shadow: #919191;
 
 .page-header {
     background-color: #EFFCD5;
-    display: flex;
-    flex-direction: column;
     height: 180px;
     position: fixed;
     width:100%;
+}
+
+.page-header__item{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
