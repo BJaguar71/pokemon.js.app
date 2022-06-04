@@ -49,7 +49,6 @@ let pokemonRepository = (function (){
         };
         // add pokemons 
         add(pokemon);
-        console.log(pokemon);
       });
       // catch the errors
       }).catch(function(e){
@@ -70,9 +69,7 @@ let pokemonRepository = (function (){
   }
   //defined a function to show pokemons details
   function showDetails(item){
-    pokemonRepository.loadDetails(item).then(function (){
-      console.log(item);
-    });
+    pokemonRepository.loadDetails(item).then(function (){});
   }
   return {
     add: add,
