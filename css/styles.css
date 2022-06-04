@@ -99,6 +99,14 @@ li {
     width:100%;
     font-family: 'Open Sans', sans-serif;
 }
+
+.copy-right {
+    text-align: center;
+    color:#0C3348;
+    padding: 20px;
+    margin: 10px auto;
+}
+
 /* start grid fallback */
 .pokemon-list {
     display: inline-block;
