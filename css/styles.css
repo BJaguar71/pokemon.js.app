@@ -87,7 +87,12 @@ button:focus,
 li {
     list-style: none;
 }
-
+/* start grid fallback */
+.pokemon-list {
+    display: inline-block;
+    width: auto;
+}
+/* end grid fallback*/
 .page-footer {
     align-items: center;
     background-color: #929984;
