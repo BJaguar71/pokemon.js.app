@@ -65,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    font-family: 'Chakra Petch';
+    font-family: 'Open Sans', sans-serif;
     margin: 10px auto;
     padding: 10px;
     transition: all .2s ease-in-out;
