@@ -77,6 +77,10 @@ button:focus,
 
 }
 
+li {
+    list-style: none;
+}
+
 .page-footer {
     align-items: center;
     background-color: #929984;
