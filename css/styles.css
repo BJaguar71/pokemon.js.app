@@ -116,6 +116,10 @@ li {
     }
     .logo {
         width: 70px;
+        margin: 0 auto;
+    }
+    .pokemon-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
