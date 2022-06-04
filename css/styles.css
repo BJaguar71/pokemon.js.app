@@ -114,4 +114,14 @@ li {
     }
 }
 
+@keyframes rotate-360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+.logo {
+    animation: 2s rotate-360 ease;
 }
