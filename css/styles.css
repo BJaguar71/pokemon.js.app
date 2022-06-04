@@ -160,3 +160,14 @@ li {
 .logo {
     animation: 2s rotate-360 ease;
 }
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.page-header {
+    animation: fade-in 1s ease-in;
+}
