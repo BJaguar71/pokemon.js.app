@@ -67,6 +67,16 @@ body {
     transition: opacity 0.3s; 
 }
 
+button:hover, 
+button:focus,
+.pokemon-button:hover,
+.pokemon-button:focus {
+    cursor:pointer; 
+    background-color: #D5A100;
+    color: white;
+
+}
+
 .page-footer {
     align-items: center;
     background-color: #929984;
