@@ -180,6 +180,6 @@ li {
         opacity: 100%;
     }
 }
-.page-header {
+.page-header__item {
     animation: fade-in 1s ease-in;
 }
