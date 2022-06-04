@@ -28,6 +28,15 @@ text-shadow: #1B53BA;
     width: 80px;
 }
 
+.title {
+    text-align: center;
+    margin: 5px auto;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 30px;
+    color:#FFCC00;
+    text-shadow: 3px 3px 6px #1B53BA;
+}
+
 body {
     background-color: #EFFCD5;
     font-family: 'Lato', sans-serif;
