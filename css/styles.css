@@ -76,6 +76,9 @@ button:focus,
     cursor:pointer; 
     background-color: #D5A100;
     color: white;
+    transform: scale(1.5);
+    box-shadow: 1px 5px 5px #919191;
+}
 
 }
 
