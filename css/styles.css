@@ -105,4 +105,13 @@ li {
     }
 }
 
+@media all and (max-width: 750px) {
+    h1, .title {
+        font-size: 20px;
+    }
+    .logo {
+        width: 80px;
+    }
+}
+
 }
