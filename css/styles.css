@@ -15,8 +15,14 @@ text-shadow: #1B53BA;
 }
 
 body {
+.page-header {
+    background-color: #EFFCD5;
     display: flex;
-    background-color: #63484e;
+    flex-direction: column;
+    height: 180px;
+    position: fixed;
+    width:100%;
+}
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
