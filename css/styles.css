@@ -136,7 +136,6 @@ ul.pokemon-list {
     }
     .logo {
         width: 70px;
-        margin: 0 auto;
     }
     ul.pokemon-list {
         grid-template-columns: 1fr 1fr;
@@ -148,8 +147,7 @@ ul.pokemon-list {
         font-size: 15px;
     }
     .logo {
-        width: 80px;
-        margin: 0 auto;
+        width: 60px;
     }
     ul.pokemon-list {
         grid-template-columns: 1fr 1fr 1fr;
@@ -162,7 +160,6 @@ ul.pokemon-list {
     }
     .logo {
         width: 80px;
-        margin: 0 auto;
     }
     .pokemon-list {
         grid-template-columns: 1fr 1fr 1fr;
