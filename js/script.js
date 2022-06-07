@@ -34,8 +34,16 @@ let pokemonRepository = (function (){
       showDetails(pokemon);
     });
   }
+  // modal cretaed to show pokemons details
+  let modalContainer = document.querySelector('#modal-container');
 
+  // show modal function
+  function showModal(pokemon) {
+    // remove existing text in modalContainer
+    modalContainer.innerText = '';
 
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
 
 
     
