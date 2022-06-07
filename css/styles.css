@@ -141,6 +141,10 @@ ul.pokemon-list {
         padding-right: 20px;
         margin: 10px auto;
     }
+    .pokemon-button {
+        font-size: 15px;
+        width: 75%;
+        height: 90px;
     }
 }
 
