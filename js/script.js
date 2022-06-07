@@ -85,6 +85,13 @@ let pokemonRepository = (function (){
       hideModal();
     }
   });
+  // hide modal by clicking outside of it
+  modalContainer.addEventListener('click', (e) => {
+    let target = e.target;
+    if (e.target === modalContainer) {
+      hideModal();
+    }
+  });
 
   // functoion to load list from the API
   function loadList(){
