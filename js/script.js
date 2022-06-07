@@ -71,6 +71,10 @@ let pokemonRepository = (function (){
     modalContainer.classList.add('is-visible');
   }
 
+  // function to hide modal
+  function hideModal() {
+    modalContainer.classList.remove('is-visible');
+  }
     }
 
   // functoion to load list from the API
