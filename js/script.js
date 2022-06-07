@@ -68,6 +68,8 @@ let pokemonRepository = (function (){
     modal.appendChild(pokemonImag);
     modalContainer.appendChild(modal);
 
+    modalContainer.classList.add('is-visible');
+  }
 
     }
 
