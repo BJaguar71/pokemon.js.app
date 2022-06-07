@@ -137,6 +137,10 @@ ul.pokemon-list {
     }
     ul.pokemon-list {
         grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px auto;
+    }
     }
 }
 
