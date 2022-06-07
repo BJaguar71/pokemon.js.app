@@ -172,6 +172,7 @@ ul.pokemon-list {
     }
 }
 
+
 @keyframes rotate-360 {
     0% {
         transform: rotate(0deg);
@@ -181,8 +182,9 @@ ul.pokemon-list {
     }
 }
 .logo {
-    animation: 2s rotate-360 ease;
+    animation: 3s rotate-360 ease-in-out;
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;
