@@ -75,6 +75,10 @@ let pokemonRepository = (function (){
   function hideModal() {
     modalContainer.classList.remove('is-visible');
   }
+  // added event listener to open modal with name and height pokemon
+  document.querySelector('.pokemon-list').addEventListener('click', () => {
+    showModal();
+  });
     }
 
   // functoion to load list from the API
