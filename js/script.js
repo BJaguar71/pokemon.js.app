@@ -6,12 +6,12 @@ let pokemonRepository = (function (){
   // function to add new pokemons
   function add(pokemon){
     return pokemonList.push(pokemon);
-    }
-// returns pokemonlist array
+  }
+  // returns pokemonlist array
   function getAll(){
     return pokemonList;
-    }
-// new finction was declared to add list item
+  }
+  // new finction was declared to add list item
   function addListItem(pokemon){
       // pokemon-list class was selected
     let pokemonList = document.querySelector('.pokemon-list');
@@ -32,8 +32,18 @@ let pokemonRepository = (function (){
     //adding event listener to show the infos on click
     button.addEventListener('click', function(event){
       showDetails(pokemon);
-      });
+    });
+  }
+
+
+
+
+    
+
+
+
     }
+
   // functoion to load list from the API
   function loadList(){
     return fetch(apiUrl).then(function (response){
@@ -72,6 +82,7 @@ let pokemonRepository = (function (){
     pokemonRepository.loadDetails(item).then(function (){});
     console.log(item);
   }
+
   return {
     add: add,
     getAll: getAll,
@@ -81,6 +92,7 @@ let pokemonRepository = (function (){
     showDetails: showDetails
   };
 })();
+
 //load list
 pokemonRepository.loadList().then(function(){
   // loop function declared: forEach()
