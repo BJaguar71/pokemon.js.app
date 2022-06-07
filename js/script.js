@@ -79,7 +79,12 @@ let pokemonRepository = (function (){
   document.querySelector('.pokemon-list').addEventListener('click', () => {
     showModal();
   });
+  // hide modal pressing esc key
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+      hideModal();
     }
+  });
 
   // functoion to load list from the API
   function loadList(){
