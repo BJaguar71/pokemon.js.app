@@ -54,6 +54,7 @@ let pokemonRepository = (function (){
         console.error(e);
     })
   }
+  // this function loads the details of each pokemon
   function loadDetails (item){
     let url = item.detailsUrl;
     return fetch(url).then(function(response){
