@@ -122,6 +122,16 @@ li {
     text-align: center;
 }
 
+.modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+}
 .close-modal {
     float: right;
     -webkit-appearance: none;
