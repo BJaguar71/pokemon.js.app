@@ -76,7 +76,7 @@ let pokemonRepository = (function (){
 
   // add event listener to show the details on click
   document.querySelector('ul').addEventListener('click', () => {
-    showModal('undefined', 'undefined');
+    showModal(pokemonList.name, pokemonList.height);
     });
 
   //hide modal pressing esc
