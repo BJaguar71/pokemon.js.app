@@ -71,11 +71,12 @@ let pokemonRepository = (function (){
   function hideModal() {
     modalContainer.classList.remove('is-visible');
   }
-  // added event listener to open modal with name and height pokemon
-  document.querySelector('.pokemon-list').addEventListener('click', () => {
-    showModal();
-  });
-  // hide modal pressing esc key
+
+  // add event listener to show the details on click
+  document.querySelector('ul').addEventListener('click', () => {
+    showModal('undefined', 'undefined');
+    });
+
   window.addEventListener('keydown', (e) => {
     if(e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
       hideModal();
