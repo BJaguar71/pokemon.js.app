@@ -83,6 +83,7 @@ let pokemonRepository = (function (){
       hideModal();
     }
   });
+
   // hide modal by clicking outside of it
   modalContainer.addEventListener('click', (e) => {
     let target = e.target;
@@ -90,7 +91,7 @@ let pokemonRepository = (function (){
       hideModal();
     }
   });
-
+  
   // functoion to load list from the API
   function loadList(){
     return fetch(apiUrl).then(function (response){
