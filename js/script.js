@@ -109,7 +109,7 @@ let pokemonRepository = (function (){
       // catch the errors
       }).catch(function(e){
         console.error(e);
-    })
+    });
   }
   // this function loads the details of each pokemon
   function loadDetails (item){
@@ -127,7 +127,7 @@ let pokemonRepository = (function (){
   //defined a function to show pokemons details
   function showDetails(item){
     pokemonRepository.loadDetails(item).then(function (){});
-    console.log(item);
+    showModal(item.name, item.height);
   }
 
   return {
