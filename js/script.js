@@ -77,8 +77,9 @@ let pokemonRepository = (function (){
     showModal('undefined', 'undefined');
     });
 
+  //hide modal pressing esc
   window.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
       hideModal();
     }
   });
