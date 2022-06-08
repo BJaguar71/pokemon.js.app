@@ -23,7 +23,6 @@ let pokemonRepository = (function (){
     button.innerText = pokemon.name;
     // a class added to the button
     button.classList.add('pokemon-button');
-    
     // appending button 
     listPokemon.appendChild(button);
     //appending list element
@@ -38,7 +37,7 @@ let pokemonRepository = (function (){
   let modalContainer = document.querySelector('#modal-container');
 
   // show modal function
-  function showModal(pokemon) {
+  function showModal(name, height) {
     // remove existing text in modalContainer
     modalContainer.innerText = '';
 
