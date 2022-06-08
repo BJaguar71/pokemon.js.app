@@ -86,7 +86,7 @@ let pokemonRepository = (function (){
   // hide modal by clicking outside of it
   modalContainer.addEventListener('click', (e) => {
     let target = e.target;
-    if (e.target === modalContainer) {
+    if (target === modalContainer) {
       hideModal();
     }
   });
