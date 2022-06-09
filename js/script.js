@@ -74,11 +74,6 @@ let pokemonRepository = (function (){
     modalContainer.classList.remove('is-visible');
   }
 
-  // add event listener to show the details on click
-  document.querySelector('ul').addEventListener('click', () => {
-    showModal(pokemonList.name, pokemonList.height);
-    });
-
   //hide modal pressing esc
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
