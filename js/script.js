@@ -124,8 +124,9 @@ let pokemonRepository = (function (){
   }
   //defined a function to show pokemons details
   function showDetails(item){
-    pokemonRepository.loadDetails(item).then(function (){});
-    showModal(item.name, item.height);
+    pokemonRepository.loadDetails(item).then(function (){
+      showModal(item);
+    });
   }
 
   return {
