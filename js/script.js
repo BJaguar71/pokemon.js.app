@@ -53,7 +53,7 @@ let pokemonRepository = (function (){
     pokemonName.innerText = pokemon.name;
     
     let pokemonHeight = document.createElement('p');
-    pokemonHeight.innerText = height;
+    pokemonHeight.innerText = pokemon.height + ' m';
 
     //add <img>
     let pokemonImg = document.createElement('img');
