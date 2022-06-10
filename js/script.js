@@ -50,7 +50,7 @@ let pokemonRepository = (function (){
     closeButtonElement.addEventListener('click', hideModal);
 
     let pokemonName = document.createElement('h1');
-    pokemonName.innerText = name;
+    pokemonName.innerText = pokemon.name;
     
     let pokemonHeight = document.createElement('p');
     pokemonHeight.innerText = height;
