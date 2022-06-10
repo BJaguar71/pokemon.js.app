@@ -37,7 +37,7 @@ let pokemonRepository = (function (){
   let modalContainer = document.querySelector('#modal-container');
 
   // show modal function
-  function showModal(name, height) {
+  function showModal(pokemon) {
     // remove existing text in modalContainer
     modalContainer.innerHTML = '';
 
