@@ -14,7 +14,7 @@ let pokemonRepository = (function (){
   // new finction was declared to add list item
   function addListItem(pokemon){
       // pokemon-list class was selected
-    let pokemonList = document.querySelector('.pokemon-list');
+    let pokemonList = document.querySelector('.list-group');
     // list element was added to the ul parent
     let listPokemon = document.createElement('li');
     // a button was added to each list parent
@@ -22,7 +22,7 @@ let pokemonRepository = (function (){
     // button inner text were defined : pokemon's name
     button.innerText = pokemon.name;
     // a class added to the button
-    button.classList.add('pokemon-button');
+    button.classList.add('btn','btn-warning', 'btn-lg', 'btn-block');
     // appending button 
     listPokemon.appendChild(button);
     //appending list element
