@@ -38,45 +38,33 @@ let pokemonRepository = (function (){
       showDetails(pokemon);
     });
   }
-  // modal cretaed to show pokemons details
-  let modalContainer = document.querySelector('#modal-container');
+  // function to show modal
+  function showModal (pokemon) {
+    let modalBody = $('.modal-body');
+    let modalHeader = $('.modal-header');
+    let modalTitle = $('.modal-title');
 
-  // show modal function
-  function showModal(pokemon) {
-    // remove existing text in modalContainer
-    modalContainer.innerHTML = '';
+    // clear the existing content on the modal
+    modalBody.empty();
+    modalTitle.empty();
 
-    let modal = document.createElement('div');
-    modal.classList.add('modal');
-    // add modal close button, title, text 
-    let closeButtonElement = document.createElement('button');
-    closeButtonElement.innerText = 'Close';
-    closeButtonElement.classList.add('close-modal');
-    closeButtonElement.addEventListener('click', hideModal);
+    //creating ne elements for the modal
+    let nameElement = $('<h1>' + pokemon.name + '</h1>');
+    // image
+    let imageElementFront = $('<img clas="modal-img" style="50%">');
+    imageElementFront.attr('src', pokemon.imageUrlFront);
+    let imageElementBack = $('<img class="modal-img" style="50%">');
+    imageElementBack.attr('src', pokemon.imageUrlBack);
+    //height
+    let contentElement = $('<p> Height: ' + pokemon.height + ' m</p>');
 
-    let pokemonName = document.createElement('h1');
-    pokemonName.innerText = pokemon.name;
+    //append elements
+    modalTitle.append(nameElement);
+    modalBody.append(imageElementFront);
+    modalBody.append(imageElementBack);
+    modalBody.append(contentElement);
+    modalHeader.append(modalTitle);
     
-    let pokemonHeight = document.createElement('p');
-    pokemonHeight.innerText = pokemon.height + ' m';
-
-    //add <img>
-    let pokemonImg = document.createElement('img');
-    // set the source
-    pokemonImg.src = pokemon.imageUrl;
-    // append created children
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(pokemonName);
-    modal.appendChild(pokemonHeight);
-    modal.appendChild(pokemonImg);
-    modalContainer.appendChild(modal);
-
-    modalContainer.classList.add('is-visible');
-  }
-
-  // function to hide modal
-  function hideModal() {
-    modalContainer.classList.remove('is-visible');
   }
 
   //hide modal pressing esc
