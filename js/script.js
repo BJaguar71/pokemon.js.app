@@ -66,21 +66,6 @@ let pokemonRepository = (function (){
     modalHeader.append(modalTitle);
     
   }
-
-  //hide modal pressing esc
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-      hideModal();
-    }
-  });
-
-  // hide modal by clicking outside of it
-  modalContainer.addEventListener('click', (e) => {
-    let target = e.target;
-    if (target === modalContainer) {
-      hideModal();
-    }
-  });
   
   // functoion to load list from the API
   function loadList(){
