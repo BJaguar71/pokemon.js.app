@@ -17,6 +17,8 @@ let pokemonRepository = (function (){
     let pokemonList = document.querySelector('.list-group');
     // list element was added to the ul parent
     let listPokemon = document.createElement('li');
+    listPokemon.classList.add('list-group-item')
+    listPokemon.classList.add('p-3', 'mb-2', 'bg-light');
     // a button was added to each list parent
     let button = document.createElement('button');
     // button inner text were defined : pokemon's name
