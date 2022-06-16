@@ -25,6 +25,9 @@ let pokemonRepository = (function (){
     button.innerText = pokemon.name;
     // a class added to the button
     button.classList.add('btn','btn-warning', 'btn-lg', 'btn-block');
+    // setting data-toggle attr
+    button.setAttribute('data-toggle', 'modal');
+    button.setAttribute('data-target', '#exampleModal');
     // appending button 
     listPokemon.appendChild(button);
     //appending list element
