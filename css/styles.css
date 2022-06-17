@@ -18,7 +18,8 @@ main {
 }
 
 .modal-body {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .page-footer {
     text-align: center;
