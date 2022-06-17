@@ -33,5 +33,8 @@ main {
     margin: auto;
 }
 .modal-img {
-    width: 100%;
+    width: 50%;
+    margin: 20px 120px 80px;
+}
+
 }
