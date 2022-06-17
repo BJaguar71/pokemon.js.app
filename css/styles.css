@@ -13,7 +13,9 @@ main {
 #page-title {
     padding-right: 10px;
 }
-
+#about {
+    color: #46cebe;
+}
 .modal-header {
     display: inline-block;
 }
