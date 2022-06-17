@@ -30,6 +30,7 @@ main {
 .modal-content {
     background-color: #fafaf8;
     color: black;
+    margin: auto;
 }
 .modal-img {
     width: 100%;
