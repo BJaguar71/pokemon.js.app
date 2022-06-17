@@ -53,15 +53,14 @@ let pokemonRepository = (function (){
     // image
     let imageElementFront = $('<img class="modal-img">');
     imageElementFront.attr('src', pokemon.imageUrlFront);
-    let imageElementBack = $('<img class="modal-img">');
-    imageElementBack.attr('src', pokemon.imageUrlBack);
+
     //height
     let contentElement = $('<p> Height: ' + pokemon.height + ' m</p>');
 
     //append elements
     modalTitle.append(nameElement);
     modalBody.append(imageElementFront);
-    modalBody.append(imageElementBack);
+    
     modalBody.append(contentElement);
     modalHeader.append(modalTitle);
     
@@ -93,8 +92,7 @@ let pokemonRepository = (function (){
     return fetch(url).then(function(response){
       return response.json();
     }).then(function(details){
-      item.imageUrlFront = details.sprites.front_default;
-      item.imgeUrlBack = details.sprites.back_default;
+      item.imageUrlFront = details.sprites.other.dream_world.front_default;
       item.height = details.height;
       item.types = details.types;
     }).catch(function(e){

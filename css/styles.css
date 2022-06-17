@@ -18,7 +18,8 @@ main {
 }
 
 .modal-body {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .page-footer {
     text-align: center;
@@ -29,7 +30,20 @@ main {
 .modal-content {
     background-color: #fafaf8;
     color: black;
+    margin: auto;
 }
 .modal-img {
-    width: 100%;
+    width: 50%;
+    margin: 20px 120px 80px;
+}
+
+.logo {
+    width: 80px;
+}
+
+@media all and (min-width: 750px) {
+    .list-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
