@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon JS App</title>
-    <link rel="shortcut icon" href="img/icons8-pokemon-96.png">
-    <!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--normalize Css/Css file here-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- script tags here -->
-    <!-- jQuery CDN and Bootstrap script tags here -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
-    <!-- polyfill here-->
-    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" async></script>
-    <script src="js/fetch.umd.js" async></script>
-    <!-- my own script file-->
-    <script src="js/script.js" async></script>
-    <!-- tota11y link-->
-    <script src="js/tota11y.min.js" async></script>
-</head>
-<body >
-    <div class="bg-light page">
-        <header class="page-header">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pokemon JS App</title>
+      <link rel="shortcut icon" href="img/icons8-pokemon-96.png">
+      <!-- Bootstrap CSS link -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!--normalize Css/Css file here-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <!-- script tags here -->
+      <!-- jQuery CDN and Bootstrap script tags here -->
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
+      <!-- polyfill here-->
+      <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js" async></script>
+      <script src="js/fetch.umd.js" async></script>
+      <!-- my own script file-->
+      <script src="js/script.js" async></script>
+      <!-- tota11y link-->
+      <script src="js/tota11y.min.js" async></script>
+   </head>
+   <body >
+      <div class="bg-light page">
+         <header class="page-header">
             <!--Navbr here-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="index.html">
-                    <span id= "page-title">P o k é d e x</span>
-                    <img src="img/2875608_fun_pokemon_layer_hat_photo_icon.svg" alt="pokemon" class="logo" width="80px">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <a class="navbar-brand" href="index.html">
+               <span id= "page-title">P o k é d e x</span>
+               <img src="img/2875608_fun_pokemon_layer_hat_photo_icon.svg" alt="pokemon" class="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link about" href="#">About</a>
-                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link about" href="#">About</a>
+                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                   </form>
-                </div>
-              </nav>
-        </header>
-        <main>
+               </div>
+            </nav>
+         </header>
+         <main>
             <ul class="list-group bg-light"></ul>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title" id="exampleModalLabel"></h1>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">pokemon name</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-                </div>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </main>
-        <footer class="p-3 mb-2 bg-secondary text-white page-footer">
+         </main>
+         <footer class="p-3 mb-2 bg-secondary text-white page-footer">
             <p class="copy-right">Copy right 2022 &copy;</p>
-        </footer>   
-    </div>
-</body>
+         </footer>
+      </div>
+   </body>
 </html>
