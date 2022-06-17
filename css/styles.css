@@ -2,6 +2,7 @@
 color palette
 modal-content-bg-color: #fafaf8;
 modal-content-font-color: black;
+about-font-color: #46cebe;
 */
 
 main {
@@ -12,7 +13,9 @@ main {
 #page-title {
     padding-right: 10px;
 }
-
+#about {
+    color: #46cebe;
+}
 .modal-header {
     display: inline-block;
 }
