@@ -41,7 +41,7 @@ main {
     width: 80px;
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 450px) {
     .list-group {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
