@@ -61,6 +61,8 @@ main {
     .modal-title {
         font-size: medium;
     }
+}
+@media all and (min-width: 300px) and (max-width: 450px) {
     .modal-title {
         font-size: small;
     }
