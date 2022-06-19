@@ -19,7 +19,9 @@ main {
 .modal-header {
     display: inline-block;
 }
-
+.modal-title {
+    font-size: large;
+}
 .modal-body {
     display: flex;
     flex-direction: column;
@@ -55,5 +57,11 @@ main {
     .modal-open {
         width: 100%;
         position:fixed
+    }
+    .modal-title {
+        font-size: medium;
+    }
+    .modal-title {
+        font-size: small;
     }
 }
