@@ -19,7 +19,9 @@ main {
 .modal-header {
     display: inline-block;
 }
-
+.modal-title {
+    font-size: large;
+}
 .modal-body {
     display: flex;
     flex-direction: column;
@@ -36,8 +38,8 @@ main {
     margin: auto;
 }
 .modal-img {
-    width: 50%;
-    margin: 20px 120px 80px;
+    width: 60%;
+    margin: 20%;
 }
 
 .logo {
@@ -55,5 +57,13 @@ main {
     .modal-open {
         width: 100%;
         position:fixed
+    }
+    .modal-title {
+        font-size: medium;
+    }
+}
+@media all and (min-width: 300px) and (max-width: 450px) {
+    .modal-title {
+        font-size: small;
     }
 }
