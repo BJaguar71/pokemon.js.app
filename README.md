@@ -13,4 +13,4 @@ This is a Pokédex App built with HTML, CSS and Javascript that loads data from 
 
 
 #### Autor
-[GitHub](https://github.com/BJaguar71)
+[Maryam Hanifi](https://github.com/BJaguar71)
